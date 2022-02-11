@@ -1,4 +1,11 @@
 .form label {
-    display: block;
+    display: flex;
     margin: .5em 0;
+    gap: 1em;
 }
+.form label input {
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+  }
