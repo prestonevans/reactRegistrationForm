@@ -1,8 +1,10 @@
 :root {
   --primary-color: #1b1b32;
   --secondary-color: #f5f6f7;
+  --tertiary-color: peachpuff;
   --transition: .3s ease-in;
   --md-font: 1.1rem;
+  accent-color: peachpuff;
 }
 body {
   margin: 0;

@@ -3,6 +3,7 @@
     border: 2px solid var(--secondary-color);
     border-top-left-radius: 5rem;
     border-bottom-right-radius: 5rem;
+    font-size: var(--md-font);
 }
 fieldset {
     border: none;
@@ -11,10 +12,16 @@ fieldset {
     display: flex;
     align-items: center;
     margin: .5em 0;
-    gap: 1em;
     font-size: var(--md-font);
 }
 .form label input {
+    margin-right: 1em;
+}
+.form a {
+    color: var(--tertiary-color);
+    
+}
+.form label input:not([type='radio'], [type='checkbox']) {
     flex-grow: 1;
     background-color: transparent;
     border: none;
@@ -25,12 +32,13 @@ fieldset {
     font-size: var(--md-font);
     padding: .5em;
     transition: border-color var(--transition);
+    margin-left: 1em;
   }
   .form input:focus {
     outline: none;
   }
-.form input:focus {
-    border-color: peachpuff;
+.form.form input:focus:not([type='submit']) {
+    border-color: var(--tertiary-color);
     border-bottom: 2px solid transparent;
 }
 .form input[type='submit'] {

@@ -19,12 +19,28 @@ export default function Form() {
 				<label>
 					Enter Your Email: <input required type="email" name="email" />
 				</label>
-				<label title='Minimum eight characters, at least one letter, one number and one special character'>
+				<label title="Minimum eight characters, at least one letter, one number and one special character">
 					Create a New Password:
-					<input required type="password" name="password" pattern='^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$' />
+					<input
+						required
+						type="password"
+						name="password"
+						pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"
+					/>
 				</label>
 			</fieldset>
-			<fieldset />
+			<fieldset>
+				<label>
+					<input checked type="radio" name="account-type" /> Personal Account
+				</label>
+				<label>
+					<input type="radio" name="account-type" /> Business Account
+				</label>
+				<label>
+					<input type="checkbox" required /> I accept the &nbsp; 
+						<a href="https://www.freecodecamp.org/news/terms-of-service/"> terms and conditions</a>
+				</label>
+			</fieldset>
 			<fieldset />
 			<input type="submit" value="Submit" />
 		</form>
