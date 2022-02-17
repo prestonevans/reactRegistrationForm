@@ -13,13 +13,19 @@ fieldset {
     align-items: center;
     margin: .5em 0;
     font-size: var(--md-font);
+    text-transform: capitalize;
+    cursor: pointer;
 }
 .form label input {
     margin-right: 1em;
 }
 .form a {
     color: var(--tertiary-color);
-    
+    outline: none;
+}
+.form input[type='radio'],
+.form input[type='checkbox'] {
+    accent-color: var(--tertiary-color);
 }
 .form label input:not([type='radio'], [type='checkbox']) {
     flex-grow: 1;
@@ -58,4 +64,11 @@ fieldset {
 .form input[type='submit']:hover,
 .form input[type='submit']:focus {
     transform: scale(1.05);
+}
+.form fieldset:nth-child(3) {
+    display: flex;
+    justify-content: space-between;
+}
+#file {
+    border: none;
 }
